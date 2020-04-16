@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Registra-Gestore</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form>
+    <ion-item lines="full">
+      <ion-label position="floating">Nome locale</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Tipo locale</ion-label>
+      <ion-select value="Ristorante">
+        <ion-select-option value="Ristorante">Ristorante</ion-select-option>
+        <ion-select-option value="Pizzeria">Pizzeria</ion-select-option>
+        <ion-select-option value="Pub">Pub</ion-select-option>
+        <ion-select-option value="Fast Food">Fast Food</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Indirizzo locale</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Numero del locale</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Email locale</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Email di registrazione</ion-label>
+      <ion-input type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password" required></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" color="danger" expand="block">Registrati</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

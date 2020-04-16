@@ -1,11 +1,12 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
-    </ion-buttons>
-    <ion-title>Registrazione</ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+      </ion-buttons>
+      <ion-title>Registrazione</ion-title>
+    </ion-toolbar>
 </ion-header>
+
 
 <ion-content>
   <form>
@@ -31,7 +32,7 @@
 
     <ion-row>
       <ion-col>
-        <ion-button type="submit" color="danger" expand="block">Registrati</ion-button>
+        <ion-button [routerLink]="['/vista-cliente']" type="submit" color="danger" expand="block">Registrati</ion-button>
       </ion-col>
     </ion-row>
   </form>

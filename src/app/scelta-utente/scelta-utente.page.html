@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Come vuoi registrarti?</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="auth-form">
+  <ion-row>
+    <ion-grid>
+      <ion-col align-self-center>
+        <ion-button [routerLink]="['/registra-gestore']" expand="block" color="primary">Gestore</ion-button>
+        
+        <span class="divider line one-line">o </span>
+
+        <ion-button [routerLink]="['/registra-cliente']" expand="block" color="danger">Cliente</ion-button>
+      </ion-col>
+    </ion-grid>
+  </ion-row>
+</ion-content>
