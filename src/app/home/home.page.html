@@ -1,32 +1,22 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<p class="titolo">
-  <ion-header>
-    <ion-toolbar>
+<ion-content class="sfondo">
+  <p class="titolo">
+    <ion-header>
       <ion-title>
         iFame
       </ion-title>
-    </ion-toolbar>
-  </ion-header>
-</p>
+    </ion-header>
+  </p>
 
-<div>
-  <img src="assets/icon/iFamedef.png" alt="logo" class="center">
-</div>
-
-<ion-content class="auth-form">
-  L'app che ti consente di prenotare il tuo cibo prima del tuo arrivo o prenotare sale per i tuoi eventi.
   <ion-row>
     <ion-grid>
-      <ion-col align-self-center>
-        <ion-button [routerLink]="['/scelta-utente']" expand="block" color="primary">Registrati</ion-button>
+      <ion-col align-self-center class="pos-bottoni">
+        <ion-button [routerLink]="['/login']" expand="block" color="danger">Accedi</ion-button>
 
         <span class="divider line one-line">o </span>
 
-        <span class="already">Già sei registrato?</span>
-
-        <ion-button [routerLink]="['/login']" expand="block" color="danger">Accedi</ion-button>
+        <span class="already">Non sei registrato?</span>
+        <ion-button [routerLink]="['/scelta-utente']" expand="block" color="primary">Registrati</ion-button>
       </ion-col>
     </ion-grid>
   </ion-row>
 </ion-content>
-

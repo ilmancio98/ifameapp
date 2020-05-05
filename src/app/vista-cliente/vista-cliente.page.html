@@ -1,28 +1,46 @@
 <h1 class="titolo">
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Lista Locali</ion-title>
-  </ion-toolbar>
-</ion-header>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Lista Locali</ion-title>
+    </ion-toolbar>
+  </ion-header>
 </h1>
 
+<!-- <ion-content>
+    <ion-card>
+      <ion-img src="assets/icon/zep.png" alt="logoloc"></ion-img>
+      <ion-card-header>
+        <ion-card-subtitle>Pub</ion-card-subtitle>
+        <ion-card-title>Zeppelin</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        Via Gianleonardo Palombo, 13, 86100 Campobasso CB, 388 443 3177
+      </ion-card-content>
+    </ion-card>
+</ion-content> -->
 
 <ion-content>
-  <ion-card>
-      <ion-img src="assets/icon/zep.png" alt="logoloc"></ion-img>
-    <ion-card-header>
-      <ion-card-subtitle>Pub</ion-card-subtitle>
-      <ion-card-title>Zeppelin</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      Via Gianleonardo Palombo, 13, 86100 Campobasso CB, 388 443 3177
-    </ion-card-content>
-  </ion-card>
+  <ion-list>
+    <ion-item *ngFor="let item of locals">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            {{ item.id }}
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            {{ item.name }}
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-item>
+  </ion-list>
 </ion-content>
 
 <ion-tabs>
   <ion-tab-bar slot="bottom">
-    <ion-button [routerLink]="['/home']" >
+    <ion-button [routerLink]="['/home']">
       <ion-icon name="log-out-outline"></ion-icon>
       <ion-label>Logout</ion-label>
     </ion-button>

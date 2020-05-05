@@ -33,6 +33,18 @@ const routes: Routes = [
     path: 'registra-cliente',
     loadChildren: () => import('./registra-cliente/registra-cliente.module').then( m => m.RegistraClientePageModule)
   },
+  {
+    path: 'vista-gestore',
+    loadChildren: () => import('./vista-gestore/vista-gestore.module').then( m => m.VistaGestorePageModule)
+  },
+  {
+    path: 'vista-gestore',
+    loadChildren: () => import('./vista-gestore/vista-gestore.module').then( m => m.VistaGestorePageModule)
+  },
+  // {
+  //   path: 'service',
+  //   loadChildren: () => import('./service/service.module').then( m => m.ServicePageModule)
+  // },
 ];
 
 @NgModule({

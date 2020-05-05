@@ -37,6 +37,7 @@
   display: block;
   text-align: center;
   padding-bottom: 10px;
+  
 }
 
 .titolo{
@@ -48,4 +49,18 @@
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+
+.sfondo{
+  width: 100%; height: 100%; top: 0; left: 0;
+  --background: #fff url("../../assets/icon/sfondo.jpg")no-repeat center top; position: fixed; z-index: -1;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+.pos-bottoni{
+  position:relative;
+  top: 105px;
 }
